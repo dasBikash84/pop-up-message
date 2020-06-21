@@ -1,2 +1,2 @@
-rootProject.name='Display Utility Library'
-include ':display-utils'
+rootProject.name='Pop Up Message Library'
+include ':pop-up-message'

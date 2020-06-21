@@ -1,8 +1,7 @@
-package com.dasbikash.display_utils
+package com.dasbikash.pop_up_message
 
 import android.app.Activity
 import android.graphics.Color
-import android.os.Build
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
@@ -10,10 +9,9 @@ import androidx.annotation.ColorInt
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
-import com.dasbikash.display_utils.SnackBarUtils.Companion.DEFAULT_ACTION_TEXT_CASE_IS_UPPER
-import com.dasbikash.display_utils.SnackBarUtils.Companion.DEFAULT_ACTION_TEXT_COLOR
+import com.dasbikash.pop_up_message.SnackBarUtils.Companion.DEFAULT_ACTION_TEXT_CASE_IS_UPPER
+import com.dasbikash.pop_up_message.SnackBarUtils.Companion.DEFAULT_ACTION_TEXT_COLOR
 import com.google.android.material.snackbar.Snackbar
 
 /**

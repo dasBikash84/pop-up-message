@@ -1,4 +1,4 @@
-package com.dasbikash.display_utils
+package com.dasbikash.pop_up_message
 
 import org.junit.Test
 
