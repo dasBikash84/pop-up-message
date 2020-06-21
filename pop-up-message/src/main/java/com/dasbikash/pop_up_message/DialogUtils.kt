@@ -14,10 +14,6 @@ class DialogUtils {
 
     companion object {
 
-        private const val DEFAULT_POS_BUTTON_TEXT = "Ok"
-        private const val DEFAULT_NEG_BUTTON_TEXT = "Cancel"
-        private const val DEFAULT_NEUTRAL_BUTTON_TEXT = ""
-
         /**
          * Method for creating and showing Alert Dialog
          *
@@ -71,22 +67,27 @@ class DialogUtils {
             return dialogBuilder
         }
 
-        /**
-         * class to hold parameters regarding Alert Dialog
-         * */
-        class AlertDialogDetails(
-            val title: String = "",
-            val message: String = "",
-            val positiveButtonText: String = DEFAULT_POS_BUTTON_TEXT,
-            val negetiveButtonText: String = DEFAULT_NEG_BUTTON_TEXT,
-            val neutralButtonText: String = DEFAULT_NEUTRAL_BUTTON_TEXT,
-            val isCancelable: Boolean = true,
-            val doOnPositivePress: () -> Unit = {},
-            val doOnNegetivePress: () -> Unit = {},
-            val doOnNeutralPress: () -> Unit = {},
-            val view: View? = null
-        )
-
     }
 
+    /**
+     * class to hold parameters regarding Alert Dialog
+     * */
+    class AlertDialogDetails(
+        val title: String = "",
+        val message: String = "",
+        val positiveButtonText: String = DEFAULT_POS_BUTTON_TEXT,
+        val negetiveButtonText: String = DEFAULT_NEG_BUTTON_TEXT,
+        val neutralButtonText: String = DEFAULT_NEUTRAL_BUTTON_TEXT,
+        val isCancelable: Boolean = true,
+        val doOnPositivePress: () -> Unit = {},
+        val doOnNegetivePress: () -> Unit = {},
+        val doOnNeutralPress: () -> Unit = {},
+        val view: View? = null
+    ){
+        companion object{
+            private const val DEFAULT_POS_BUTTON_TEXT = "Ok"
+            private const val DEFAULT_NEG_BUTTON_TEXT = "Cancel"
+            private const val DEFAULT_NEUTRAL_BUTTON_TEXT = ""
+        }
+    }
 }
