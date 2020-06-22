@@ -43,8 +43,6 @@ dependencies {
     		//or
     showShortSnack(message = "Snack message",actionText = "Action",
                     action = { println("Short snack with default action format")})
-    		//or
-    SnackBarUtils.showShortSnack(this,snackMessageId) // snackMessageId is a String resource Id 
 ```
 
 ##### Show snack from any class with a `view` instance (with/without attaching `action`)
